@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News Clone</title>
+    <link rel="icon" href="y18.gif" type="image/gif" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8570420209.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="app-container">
+        <div id="app-header">
+            <header class="header">
+                <div class="flex">
+                    <span class="header-title">
+                        <img class="header-logo" src="y18.gif" alt="Hacker News"> Hacker News
+                    </span>
+                    <a href="#/" class="header-link">Top</a>
+                    <a href="#/new" class="header-link">New</a>
+                    <a href="#/ask" class="header-link">Ask</a>
+                    <a href="#/show" class="header-link">Show</a>
+                    <a href="#/job" class="header-link">Job</a>
+
+                    <a href="#/favourites" class="header-link">Favourites</a>
+                </div>
+            </header>
+        </div>
+        <!-- Display the Page according to the route -->
+        <div id="route-container">
+            <div id="router-outlet">
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="//unpkg.com/navigo@6"></script>
+</body>
+</html>
